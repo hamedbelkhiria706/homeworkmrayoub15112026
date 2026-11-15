@@ -44,7 +44,7 @@ def create_conversation(titre):
     cur = conn.cursor()
     cur.execute("INSERT INTO conversations (titre) VALUES (?)", (titre,))
     conn.commit()
-    new_id = cur.lastrowid  # nraj3ou el id bech nesta3mlouh ba3ed
+    new_id = cur.lastrowid   
     conn.close()
     return new_id
 
